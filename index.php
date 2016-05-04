@@ -1,7 +1,7 @@
 <?php
-include "header.php";
+include "layouts/header.php";
 ?>
-
+<a href="#">hola</a>
 <?php
-include "footer.php";
+include "layouts/footer.php";
 ?>

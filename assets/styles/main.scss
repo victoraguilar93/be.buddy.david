@@ -1,2 +1,27 @@
-@import "libraries/normalize.css"
-@import "libraries/bootstrap.min.css"
+@import "libraries/bootstrap.min.css";
+@import "libraries/normalize.css";
+
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+}
+
+footer{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		hr.footer {
+				border-width: 2px;
+				margin: 0;
+		}
+		p{
+				margin: 15px auto;
+				color: #eee;
+				font-weight: bold;
+		}
+
+}
