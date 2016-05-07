@@ -1,11 +1,61 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800";
 @import "libraries/bootstrap.min.css";
 @import "libraries/normalize.css";
+@import "libraries/select2.min.css";
+@import "contact-information";
 
 
 body {
   position: relative;
   margin: 0;
-  min-height: 100%;
+//  min-height: 100%;
+	padding-bottom: 52px;
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+header{
+	background-color: #fbfcfc;
+	padding: 20px 0;
+	.logo{
+		img{
+			margin: 0 auto;
+		}
+	}
+}
+
+.back-save{
+	margin-bottom: 52px;
+	button{
+		color: #fff;
+		border-radius: 0;
+		&:hover, &:focus, &:active{
+			outline: 0;
+		}
+	}
+	.back{
+		text-align: left;
+		button{
+			background-color: #808080;
+			border: 1px solid #808080;
+			&:hover{
+				background-color: #fff;
+				color: #808080;
+			}
+		}
+	}
+	.save{
+		text-align: right;
+		button{
+			background-color: #f1001e;
+			border: 1px solid #f1001e;
+			&:hover{
+				background-color: #fff;
+				color: #f1001e;
+			}
+		}
+	}
 }
 
 footer{
@@ -15,13 +65,27 @@ footer{
 		right: 0;
 		text-align: center;
 		hr.footer {
-				border-width: 2px;
-				margin: 0;
+			border-width: 2px;
+			border-color: #83898b;
+			margin: 0;
 		}
 		p{
 				margin: 15px auto;
-				color: #eee;
-				font-weight: bold;
+				color: #979696;
 		}
 
+}
+.container.main{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.form-title {
+	background-color: #f1001e;
+	padding: 15px 0;
+	text-align: center;
+	p{
+		color: #ffffff;
+		margin: 0;
+		padding: 0;
+	}
 }

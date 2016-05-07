@@ -14,5 +14,7 @@
 			 <![endif]-->
 
 				<header>
-
+					<div class="logo">
+						<img src="assets/images/logo.png" alt="" class="img-responsive">
+					</div>
 				</header>

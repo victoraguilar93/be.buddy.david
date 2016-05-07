@@ -1,0 +1,100 @@
+	.cntact_information {
+	    ol {
+	        counter-reset: li;
+	        margin-left: 0;
+	        padding-left: 0;
+					margin-bottom: 0;
+	        li {
+	            position: relative;
+	            margin: 0;
+	            padding: 0 !important;
+							list-style: none;
+	            *list-style: decimal;
+							&:not(:last-child){
+								margin-bottom: 12px;
+							}
+	            &:before {
+	                content: counter(li);
+	                counter-increment: li;
+	                position: absolute;
+	                top: 5px;
+	                left: -2em;
+	                width: 27px;
+	                margin-right: 8px;
+	                padding: 3px 1px 4px 0 !important;
+	                color: #fff;
+	                /*color de la fuente*/
+	                font-size: 16px;
+	                background: url(../images/bullet-contact-information.png) no-repeat left top;
+	                font-weight: bold;
+	                text-align: center;
+	            }
+	            input,
+	            select {
+	                width: calc(25% - 6px);
+	                box-shadow: none;
+	                border-radius: 0;
+	                border: 1px solid #efefef;
+	                border-bottom: 1px solid #f1001e;
+	                text-align: center;
+	                padding: 7px 10px;
+	            }
+	            span.select2.select2-container--default {
+	                span {
+	                    &:hover,
+	                    &:focus,
+	                    &:active {
+	                        outline: 0;
+	                    }
+	                }
+	                box-shadow: none;
+	                border-radius: 0;
+	                border: 1px solid #efefef;
+	                border-bottom: 1px solid #f1001e;
+	                text-align: center;
+	                padding: 7px 10px;
+	                vertical-align: top;
+	                .selection {
+	                    display: block;
+	                    .select2-selection--single {
+	                        background: none;
+	                        border: none;
+	                        border-radius: 0;
+	                        height: auto;
+	                        .select2-selection__rendered {
+	                            line-height: inherit;
+	                        }
+	                        .select2-selection__arrow b {
+	                            border: none;
+	                            height: 6px;
+	                            width: 8px;
+	                            left: 20%;
+	                            top: 55%;
+	                            background-image: url(../images/arrow-select-contact-information.png);
+	                            background-repeat: no-repeat;
+	                            background-size: cover;
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
+		.add-contact{
+			margin-top: 30px;
+			button{
+				color: #f1001e;
+				background: none;
+				border-radius: 0;
+				border: 1px solid #f1001e;
+				float: right;
+				margin-right: 11px;
+				&:hover, &:focus, &:active{
+					outline: 0;
+				}
+				&:hover{
+					background-color: #f1001e;
+					color: #fff;
+				}
+			}
+		}
+	}
