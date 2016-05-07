@@ -1,8 +1,11 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800";
 @import "libraries/bootstrap.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css";
 @import "libraries/normalize.css";
 @import "libraries/select2.min.css";
+@import "libraries/fileinput.min.css";
 @import "contact-information";
+@import "new-client";
 
 
 body {
@@ -78,6 +81,30 @@ footer{
 .container.main{
 	padding-top: 70px;
 	padding-bottom: 70px;
+	input,
+	select,
+	textarea{
+		box-shadow: none;
+		border-radius: 0;
+		border: 1px solid #efefef;
+		border-bottom: 1px solid #f1001e;
+		text-align: center;
+		padding: 7px 10px;
+		font-style: italic;
+		font-weight: 300;
+		&:hover,
+		&:focus,
+		&:active{
+			outline: 0;
+		}
+		&:focus,
+		&:active{
+			border: 1px solid #f1001e;
+		}
+	}
+	textarea{
+		text-align: left;
+	}
 }
 .form-title {
 	background-color: #f1001e;
