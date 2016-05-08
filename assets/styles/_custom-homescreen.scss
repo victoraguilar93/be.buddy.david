@@ -1,0 +1,27 @@
+.home-screen{
+	.input-message{
+		padding-top: 25px;
+		padding-left: 70px;
+		@media (max-width: 820px){
+			padding-left: 15px;
+		}
+		p{
+			font-weight: normal;
+			font-size: 14px;
+			color: #2e2e2e;
+			margin-bottom: 20px;
+			&.note{
+				font-size: 12px;
+				margin-top: 25px;
+			}
+		}
+		textarea{
+			width: 100%;
+		}
+	}
+	.image{
+		img{
+			margin: 0 auto;
+		}
+	}
+}

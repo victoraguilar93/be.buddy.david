@@ -1,0 +1,25 @@
+.medical-benefits{
+	.page-title{
+		.data-inputs{
+			margin-bottom: 23px;
+		}
+		p{
+			margin-top: 45px;
+		}
+	}
+	.summary {
+		.name {
+			p{
+				padding-left: 25px;
+			}
+			.pdf-icon{
+				position: absolute;
+				top: 12px;
+				left: 20px;
+				height: 10px;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+}
