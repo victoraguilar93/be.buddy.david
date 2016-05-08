@@ -2,6 +2,9 @@
 	.holidays{
 		margin: 0 auto;
 		width: 45%;
+		@media (max-width: 820px){
+			width: 100%;
+		}
 		.holiday{
 			font-size: 14px;
 			&:not(:first-child){
@@ -14,19 +17,19 @@
 			}
 			.name{
 				input[type="checkbox"] {
-					display:none;
-				}
-				input[type="checkbox"] + label span {
-					display:inline-block;
-					width: 22px;
-					height: 22px;
-					margin-top: -1;
-					vertical-align:middle;
-					background:url(../images/nocheck-holidays.png) left top no-repeat;
-					cursor:pointer;
-				}
-				input[type="checkbox"]:checked + label span {
-					background:url(../images/check-holidays.png) top no-repeat;
+					display: none;
+					+ label span {
+						display: inline-block;
+						width: 22px;
+						height: 22px;
+						margin-top: -1;
+						vertical-align: middle;
+						background: url(../images/nocheck-holidays.png) left top no-repeat;
+						cursor: pointer;
+					}
+					&:checked + label span {
+						background: url(../images/check-holidays.png) top no-repeat;
+					}
 				}
 				label{
 					font-weight: normal;
@@ -51,8 +54,8 @@
 	.button-add{
 		margin-left: 57px;
 		margin-top: 23px;
-		button{
-
+		@media (max-width: 820px){
+			margin-left: 0;
 		}
 	}
 }

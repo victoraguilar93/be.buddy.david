@@ -31,7 +31,7 @@ include "layouts/header.php";
 					<div class="form-input">
 						<div class="start-upload-img">
 							<input id="company-logo" type="file" accept="image/*">
-							<button type="button" class="btn"><span class="glyphicon glyphicon-open" aria-hidden="true"></span>&nbsp;&nbsp;Upload File</button>
+							<button type="button" class="btn"><span class="fa fa-upload" aria-hidden="true"></span>&nbsp;&nbsp;Upload File</button>
 						</div>
 						<div class="img-input">
 							<div class="img-pre">
@@ -39,7 +39,7 @@ include "layouts/header.php";
 								<p></p>
 							</div>
 							<div class="acc-info">
-								<button type="button" class="btn"><span class="glyphicon glyphicon-open" aria-hidden="true"></span>&nbsp;&nbsp;Upload File</button>
+								<button type="button" class="btn"><span class="fa fa-upload" aria-hidden="true"></span>&nbsp;&nbsp;Upload File</button>
 								<div class="media">
 									<div class="media-left">
 										<i class="fa fa-info-circle" aria-hidden="true"></i>

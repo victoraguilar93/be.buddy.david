@@ -1,11 +1,3 @@
-//function select2_contact_information(argument) {
-//	$('.js-select2-title-contactinformation').select2({
-//		placeholder: "Title",
-//	//  allowClear: true,
-//	  minimumResultsForSearch: Infinity
-//	});
-//}
-
 function readURL(input) {
   if (input.files && input.files[0]) {
       var reader = new FileReader();
@@ -23,10 +15,14 @@ function upload_clientresourses(btn) {
 	btn.parentElement.getElementsByClassName("subir-archivo")[0].click()
 
 }
-function change_inptut_clientresourses(el) {
+function change_inptut_clientresourses(el, icon) {
 	var file_name = assingname_clientresourses(el.value)
 	var status = document.createElement("span");
-	status.className = "status check";
+	if (icon == 0) {
+		status.className = "status check";
+	}else if (icon == 1){
+		status.className = "pdf-icon fa fa-file-pdf-o";
+	}
 	var name = el.parentElement.parentElement.getElementsByClassName("name");
 	var Jname =  $(name);
 	var Hname = Jname[0];
@@ -37,10 +33,6 @@ function change_inptut_clientresourses(el) {
 function assingname_clientresourses(url_name, p) {
 	var file_name = url_name.replace(/C:\\fakepath\\/i, '');
 	return file_name;
-
-
-	// $el.parents(".summary").find('.name p').text(file_name)
-	// $el.parents(".summary").find('.name p').append('')
 }
 
 $(function() {
@@ -58,20 +50,6 @@ $(function() {
 		$html.find(".name p").text("");
 		$(".summary").last().after($html);
 	});
-
-	$(".client-resourses .summary .button-upload input.subir-archivo").change(function(event) {
-		var file_name = $(this).val().replace(/C:\\fakepath\\/i, '');
-		$(this).parents(".summary").find('.name p').text(file_name)
-		$(this).parents(".summary").find('.name p').append('<span class="status check"></span>')
-	});
-	// $(".new-client #company-logo").fileinput({
-	// 	showCaption: false,
-	// 	showRemove: false,
-	// 	showClose: false
-	// });
-	// 	$('.new-client #company-logo').on('fileselect', function(event, numFiles, label) {
-	//     $(".new-client .datos .form-input .img-input p").text(label)
-	// 	});
 
 	$(".start-upload-img button, .new-client .datos .form-input .img-input .acc-info button").click(function(event) {
 		$(".new-client #company-logo").click();

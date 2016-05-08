@@ -19,8 +19,8 @@ include "layouts/header.php";
 				<p><span class="status"></span></p>
 			</div>
 			<div class="col-xs-2 button-upload">
-				<button type="button" class="btn" onclick="upload_clientresourses(this)"><span class="glyphicon glyphicon-open" aria-hidden="true"></span>&nbsp;&nbsp;Upload File</button>
-				<input type="file" class="subir-archivo hide" onchange="change_inptut_clientresourses(this)">
+				<button type="button" class="btn" onclick="upload_clientresourses(this)"><span class="fa fa-upload" aria-hidden="true"></span>&nbsp;&nbsp;Upload File</button>
+				<input type="file" class="subir-archivo hide" onchange="change_inptut_clientresourses(this, 0)">
 			</div>
 		</div>
 		<div class="row button-add">

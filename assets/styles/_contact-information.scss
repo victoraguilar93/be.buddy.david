@@ -32,7 +32,10 @@
 	            }
 	            input,
 	            select {
-	                width: calc(25% - 6px);
+								width: calc(25% - 6px);
+								@media (max-width: 820px){
+									width: calc(50% - 6px);
+								}
 	            }
 	            span.select2.select2-container--default {
 	                span {

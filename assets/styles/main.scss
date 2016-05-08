@@ -7,7 +7,10 @@
 @import "contact-information";
 @import "new-client";
 @import "client-resourses";
-@import "_company-holidays";
+@import "company-holidays";
+@import "custom-homescreen";
+@import "company-information";
+@import "medical-benefits";
 
 body {
   position: relative;
@@ -89,6 +92,7 @@ footer{
 		border: 1px solid #efefef;
 		border-bottom: 1px solid #f1001e;
 		text-align: center;
+		text-align-last: center;
 		padding: 7px 10px;
 		font-style: italic;
 		font-weight: 300;
@@ -101,9 +105,28 @@ footer{
 		&:active{
 			border: 1px solid #f1001e;
 		}
+		::-webkit-input-placeholder {
+			 color: #828282;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+			 color: #828282;
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+			 color: #828282;
+		}
+
+		:-ms-input-placeholder {
+			 color: #828282;
+		}
+	}
+	select{
+		color: #828282;
 	}
 	textarea{
 		text-align: left;
+		resize: vertical;
 	}
 	.page-title{
 		margin-bottom: 45px;
