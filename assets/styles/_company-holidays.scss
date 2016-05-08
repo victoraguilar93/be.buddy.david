@@ -1,0 +1,58 @@
+.company-holidays{
+	.holidays{
+		margin: 0 auto;
+		width: 45%;
+		.holiday{
+			font-size: 14px;
+			&:not(:first-child){
+				margin-top: 10px;
+			}
+			hr{
+				border-top-color: #ebebeb;
+				margin-top: 5px;
+    		margin-bottom: 0;
+			}
+			.name{
+				input[type="checkbox"] {
+					display:none;
+				}
+				input[type="checkbox"] + label span {
+					display:inline-block;
+					width: 22px;
+					height: 22px;
+					margin-top: -1;
+					vertical-align:middle;
+					background:url(../images/nocheck-holidays.png) left top no-repeat;
+					cursor:pointer;
+				}
+				input[type="checkbox"]:checked + label span {
+					background:url(../images/check-holidays.png) top no-repeat;
+				}
+				label{
+					font-weight: normal;
+					margin: 0;
+					margin-left: 8px;
+					color: #2e2e2e;
+					span{
+						margin-right: 28px;
+					}
+				}
+			}
+			.date{
+				font-weight: bold;
+				color: #f1001e;
+				p{
+					text-align: center;
+					margin: 0;
+				}
+			}
+		}
+	}
+	.button-add{
+		margin-left: 57px;
+		margin-top: 23px;
+		button{
+
+		}
+	}
+}
