@@ -10,6 +10,9 @@ include "layouts/header.php";
 <a href="custom-home-screen-message.php" class="btn btn-default">custom home screen message</a>
 <a href="company-information.php" class="btn btn-default">company plan information</a>
 <a href="medical-benefits.php" class="btn btn-default">medical benefits</a>
+<a href="login.php" class="btn btn-default">Login</a>
+<a href="forgot_pass.php" class="btn btn-default">forgot password</a>
+<a href="restore-pass.php" class="btn btn-default">restore password</a>
 
 
 
