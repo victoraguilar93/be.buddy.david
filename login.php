@@ -22,7 +22,7 @@ include "layouts/header_login.php";
                   <input type="password" class="form-control" placeholder="Password" aria-describedby="pass-login">
                 </div>
                 <div class="input-group">
-                  <a href="forgot_pass.php">I forgot my password!</a>
+                  <a href="forgot_pass.php"><i class="fa fa-unlock" aria-hidden="true"></i>&nbsp;&nbsp;I forgot my password!</a>
                 </div>
                 <div class="form-input submit">
                     <button type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i>Sing In</button>
