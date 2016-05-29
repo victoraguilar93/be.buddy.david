@@ -58,4 +58,46 @@
 			margin-left: 0;
 		}
 	}
+    .add-form {
+        padding-top: 40px;
+	    ol {
+	        counter-reset: li;
+	        margin-left: 0;
+	        padding-left: 0;
+					margin-bottom: 0;
+	        li {
+	            position: relative;
+	            margin: 0;
+	            padding: 0 !important;
+							list-style: none;
+	            *list-style: decimal;
+							&:not(:last-child){
+								margin-bottom: 12px;
+							}
+	            &:before {
+	                content: counter(li);
+	                counter-increment: li;
+	                position: absolute;
+	                top: 5px;
+	                left: -2em;
+	                width: 27px;
+	                margin-right: 8px;
+	                padding: 3px 1px 4px 0 !important;
+	                color: #fff;
+	                /*color de la fuente*/
+	                font-size: 16px;
+	                background: url(../images/bullet-contact-information.png) no-repeat left top;
+	                font-weight: bold;
+	                text-align: center;
+	            }
+	            input,
+	            select {
+                    width: calc(50% - 6px);
+                    @media (max-width: 820px){
+                        width: calc(50% - 6px);
+                    }
+	            }
+	        }
+	    }
+    }
 }

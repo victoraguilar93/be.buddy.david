@@ -1,9 +1,10 @@
 <?php
 include "layouts/header.php";
 ?>
-<div class="form-title">
-	<p>Company Holidays</p>
+<div class="container loader">
+    <img src="http://www.voki.com/images/ajax-loader.gif" alt="">
 </div>
+
 <div class="container main company-holidays">
 		<div class="row page-title">
 			<div class="col-xs-12">
@@ -124,24 +125,13 @@ include "layouts/header.php";
 				<div class="col-xs-12"><hr></div>
 			</div>
 			<div class="row button-add">
-                <div class="col-xs-12">
-                    <button type="button" class="btn"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;Add new holiday</button>
-                </div>
-            </div>
+			<div class="col-xs-12">
+				<button type="button" class="btn"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;Add new holiday</button>
+			</div>
+		</div>
 		</section>
-		<div class="col-xs-6 col-xs-offset-3 add-form">
-            <form action="#">
-                <ol>
-                    <li>
-                        <input type="text" placeholder="Name">
-                        <input type="date" placeholder="Holiday date">
-                    </li>
-                </ol>
-            </form>
-        </div>
 
 </div>
 <?php
-include "layouts/back-save.php";
 include "layouts/footer.php";
 ?>

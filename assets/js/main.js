@@ -37,12 +37,25 @@ function assingname_clientresourses(url_name, p) {
 
 $(function() {
 	console.log("hello");
+    var count_new_holidays = 0;
+    $(".company-holidays .add-form").hide();
+    $(".company-holidays .button-add button").click(function(event) {
+        if (count_new_holidays == 0) {
+            $(".company-holidays .add-form").fadeIn(1000);
+            count_new_holidays++;
+        } else {
+            var li_clone = $(".company-holidays .add-form ol li:last-child").clone();
+            $(".company-holidays .add-form ol").append(li_clone);
+            $(".company-holidays .add-form ol li:last-child input").val("");
+        }
+	});
+
+
 
 	$(".cntact_information .add-contact button").click(function(event) {
 		var li_clone = $(".cntact_information ol li:last-child").clone();
 		$(".cntact_information ol").append(li_clone);
 		$(".cntact_information ol li:last-child input").val("");
-		select2_contact_information();
 	});
 
 	$(".client-resourses .button-add").click(function(event) {

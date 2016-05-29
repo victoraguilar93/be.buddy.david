@@ -13,6 +13,7 @@ include "layouts/header.php";
 <a href="login.php" class="btn btn-default">Login</a>
 <a href="forgot_pass.php" class="btn btn-default">forgot password</a>
 <a href="restore-pass.php" class="btn btn-default">restore password</a>
+<a href="loader.php" class="btn btn-default">loader</a>
 
 
 

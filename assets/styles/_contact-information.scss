@@ -32,48 +32,10 @@
 	            }
 	            input,
 	            select {
-								width: calc(25% - 6px);
-								@media (max-width: 820px){
-									width: calc(50% - 6px);
-								}
-	            }
-	            span.select2.select2-container--default {
-	                span {
-	                    &:hover,
-	                    &:focus,
-	                    &:active {
-	                        outline: 0;
-	                    }
-	                }
-	                box-shadow: none;
-	                border-radius: 0;
-	                border: 1px solid #efefef;
-	                border-bottom: 1px solid #f1001e;
-	                text-align: center;
-	                padding: 7px 10px;
-	                vertical-align: top;
-	                .selection {
-	                    display: block;
-	                    .select2-selection--single {
-	                        background: none;
-	                        border: none;
-	                        border-radius: 0;
-	                        height: auto;
-	                        .select2-selection__rendered {
-	                            line-height: inherit;
-	                        }
-	                        .select2-selection__arrow b {
-	                            border: none;
-	                            height: 6px;
-	                            width: 8px;
-	                            left: 20%;
-	                            top: 55%;
-	                            background-image: url(../images/arrow-select-contact-information.png);
-	                            background-repeat: no-repeat;
-	                            background-size: cover;
-	                        }
-	                    }
-	                }
+                    width: calc(25% - 6px);
+                    @media (max-width: 820px){
+                        width: calc(50% - 6px);
+                    }
 	            }
 	        }
 	    }
